@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nossos Momentos 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="momentos-body">
+
+  <header class="header">
+    <h1>Nossos Momentos 💕</h1>
+    <a href="index.html" class="voltar">⟵ Voltar</a>
+    <!-- Botão no canto superior direito -->
+    <a href="#" class="btn-novo-momento">➕ Adicionar Novo Momento</a>
+  </header>
+
+  <!-- Modal para adicionar momento -->
+  <div id="modal-momento" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Adicionar Novo Momento 💖</h2>
+      <p>Para adicionar um novo momento, entre em contato com o amor da sua vida 💌</p>
+      <p>Envie a foto e a descrição para que possamos atualizar a página ✨</p>
+    </div>
+  </div>
+
+  <main class="momentos-container">
+    <!-- Momento 1 -->
+    <div class="momento">
+      <img src="img/momento1.jpg" alt="Nosso reencontro e o começo de tudo">
+      <div class="info">
+        <h3 class="titulo-momento">Nosso reencontro e o começo de tudo</h3>
+        <p class="descricao">Depois de tanto tempo sem nos vermos, voltar a falar com você e finalmente ficarmos foi mágico ✨💖.</p>
+        <p class="data">📅 12/07/2025</p>
+      </div>
+    </div>
+
+    <!-- Momento 2 -->
+    <div class="momento">
+      <img src="img/momento2.png" alt="Comemoração de um evento importante">
+      <div class="info">
+        <h3 class="titulo-momento">Formatura da mamãe 🎓💖</h3>
+        <p class="descricao">Comemorando um dia super especial e emocionante, cheio de orgulho e amor ❤️✨.</p>
+        <p class="data">📅 17/07/2025</p>
+      </div>
+    </div>
+
+    <!-- Momento 3 -->
+    <div class="momento">
+      <img src="img/momento3.png" alt="Aniversário da amiga">
+      <div class="info">
+        <h3 class="titulo-momento">Aniversário da Yasmin 🎉💞</h3>
+        <p class="descricao">Comemorando o aniversário de uma das melhores amigas da Isadora, muita festa e alegria ❤️✨.</p>
+        <p class="data">📅 01/08/2025</p>
+      </div>
+    </div>
+
+    <!-- Momentos bloqueados -->
+    <div class="momento">
+      <img src="img/momentoblocked.png" alt="Momento a ser descoberto">
+      <div class="info">
+        <h3 class="titulo-momento">???</h3>
+        <p class="descricao">Momento bloqueado.</p>
+        <p class="data">📅 ??/??/????</p>
+      </div>
+    </div>
+
+    <div class="momento">
+      <img src="img/momentoblocked.png" alt="Momento a ser descoberto">
+      <div class="info">
+        <h3 class="titulo-momento">???</h3>
+        <p class="descricao">Momento bloqueado.</p>
+        <p class="data">📅 ??/??/????</p>
+      </div>
+    </div>
+
+    <div class="momento">
+      <img src="img/momentoblocked.png" alt="Momento a ser descoberto">
+      <div class="info">
+        <h3 class="titulo-momento">???</h3>
+        <p class="descricao">Momento bloqueado.</p>
+        <p class="data">📅 ??/??/????</p>
+      </div>
+    </div>
+
+    <div class="momento">
+      <img src="img/momentoblocked.png" alt="Momento a ser descoberto">
+      <div class="info">
+        <h3 class="titulo-momento">???</h3>
+        <p class="descricao">Momento bloqueado.</p>
+        <p class="data">📅 ??/??/????</p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Botão e modal
+    const btnNovo = document.querySelector('.btn-novo-momento');
+    const modal = document.getElementById('modal-momento');
+    const spanClose = document.querySelector('.modal .close');
+
+    btnNovo.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.style.display = 'block';
+    });
+
+    spanClose.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
