@@ -228,7 +228,7 @@ p {
 /* ======== RESPONSIVIDADE ======== */
 @media (max-width: 1024px) {
   .momentos-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 45px;
     padding: 45px;
   }
@@ -238,6 +238,49 @@ p {
     padding: 14px 20px;
     top: 10px;
   }
+  .momento {
+    max-width: 120%;
+    height: 1100px;
+  }
+  .momento img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+.descricao {
+  font-size: 1.7rem;
+}
+
+.data {
+  font-size: 1.5rem;
+}
+.titulo-momento {
+  font-size: 2rem;
+}
+.header h1 {
+  font-size: 5rem;
+  padding-top: 100px;
+}
+.btn-novo-momento {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  padding: 10px 16px;
+  font-size: 2rem;
+}
+.voltar {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  font-size: 2.7rem;
+  padding: 14px 22px;
+  
+}
 }
 
 @media (max-width: 700px) {
@@ -346,4 +389,5 @@ p {
 .close:hover {
   color: #ff4f9a;
 }
+
 
