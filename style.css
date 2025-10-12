@@ -281,6 +281,43 @@ p {
   padding: 14px 22px;
   
 }
+.login-container {
+  padding: 50px;
+  border-radius: 20px;
+  width: 750px;
+  max-width: 95%;
+  transition: 0.3s;
+}
+
+.login-container h2 {
+ font-size: 80px;
+}
+
+.login-container p {
+ font-size: 30px;
+}
+
+input {
+  padding: 13px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  font-size: 40px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 18px;
+  background-color: #ff6fae;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s;
+  font-size: 60px;
+}
 }
 
 @media (max-width: 700px) {
@@ -391,4 +428,5 @@ p {
 .close:hover {
   color: #ff4f9a;
 }
+
 
